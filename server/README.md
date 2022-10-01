@@ -1,5 +1,6 @@
 # API Planning
 
+
 --- Food (food items and their details)
 --- Restaurant (restaurant and its details)
 --- Menu (Menu and its details)

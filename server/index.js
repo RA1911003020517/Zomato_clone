@@ -21,16 +21,16 @@ const PORT = 4000;
 
 app.listen( PORT, () =>
 {
-    console.log( "Server is running !" );
-   /**  ConnectDB()
+    console.log( "Server is running" );
+     ConnectDB()
         .then( () =>
         {
-            console.log( "server is running" );
+            console.log( "DB is connected" );
         } )
         .catch( ( error ) =>
         {
             console.log( "server is runninng , but database connection failed" );
             console.log( error );
         } );
-        */
+        
 } );

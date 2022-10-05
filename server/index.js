@@ -5,6 +5,8 @@ import dotenv from "dotenv";
 
 import ConnectDB from "./database/connection";
 
+import Auth from './api/auth';
+
 dotenv.config();
 
 const app = express();
@@ -16,6 +18,11 @@ app.get( "/", ( req, res ) =>
         message: "Server is running",
     } );
 } );
+
+
+//  /auth/signup
+
+app.use( "/auth", Auth );
 
 const PORT = 4000;
 

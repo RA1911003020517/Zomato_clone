@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
-   "scripts": {
+  "scripts": {
     "build": "babel index.js -d dist",
     "start": "npm run build && node dist/index.js",
     "dev": "nodemon --exec babel-node index.js"
@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1"
+  }
 }
-
